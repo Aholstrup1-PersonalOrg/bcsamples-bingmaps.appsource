@@ -23,6 +23,6 @@
   },
   "useProjectDependencies": true,
   "trackALAlertsInGitHub": true,
-  "templateSha": "b404e7e37e550c6c3a75177a4426a28c54f60715",
+  "templateSha": "9d00dfe9c515452d952322f261b0c76e283fbd76",
   "PullRequestTrigger": "pull_request"
 }

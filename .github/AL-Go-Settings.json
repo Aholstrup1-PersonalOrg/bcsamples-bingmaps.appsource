@@ -1,7 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/17d656a4fde5f320c4496f80198ce5269f0e296e/Actions/.Modules/settings.schema.json",
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/aholstrup1-nuget-workspace-compiler-poc/Actions/.Modules/settings.schema.json",
   "type": "AppSource App",
-  "templateUrl": "https://github.com/microsoft/AL-Go-AppSource@preview",
+  "templateUrl": "https://github.com/microsoft/AL-Go@aholstrup1-nuget-workspace-compiler-poc",
   "runs-on": "ubuntu-latest",
   "unusedALGoSystemFiles": [
     "AddExistingAppOrTestApp.yaml",
@@ -9,21 +9,19 @@
     "CreateTestApp.yaml",
     "CreatePerformanceTestApp.yaml"
   ],
-  "deliverToAppSource": {
-    "branches": [
-      "main",
-      "e2e"
-    ]
-  },
-  "useCompilerFolder": true,
+  "useCompilerFolder": false,
   "doNotPublishApps": true,
-  "AZURE_CREDENTIALSSecretName": "AZURE_CREDENTIALS",
-  "useProjectDependencies": true,
-  "trustedSigning": {
-    "Endpoint": "https://neu.codesigning.azure.net",
-    "Account": "BCCodeSigningTest",
-    "CertificateProfile": "BCCodeSigningPublic"
+  "doNotSignApps": true,
+  "doNotBuildTests": true,
+  "doNotRunTests": true,
+  "doNotRunBcptTests": true,
+  "workspaceCompilation": {
+    "enabled": true,
+    "dependencyResolution": "NuGet",
+    "ALToolVersion": "18.0.0-beta",
+    "toolPackageUrl": "https://github.com/Aholstrup1-PersonalOrg/bcsamples-bingmaps.appsource/raw/nuget-workspace-compile-uptake/.altool/Microsoft.Dynamics.BusinessCentral.Development.Tools.18.0.0-beta.nupkg"
   },
+  "useProjectDependencies": true,
   "trackALAlertsInGitHub": true,
   "templateSha": "fb143b7418f66379f231c1e1000de65684535f1c",
   "PullRequestTrigger": "pull_request"

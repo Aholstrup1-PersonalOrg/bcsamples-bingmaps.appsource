@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/17d656a4fde5f320c4496f80198ce5269f0e296e/Actions/.Modules/settings.schema.json",
-  "artifact": "////latest",
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/aholstrup1-nuget-workspace-compiler-poc/Actions/.Modules/settings.schema.json",
+  "artifact": "////28.4.53241.53312",
   "cacheImageName": "",
   "versioningStrategy": 15,
   "workflowSchedule": {

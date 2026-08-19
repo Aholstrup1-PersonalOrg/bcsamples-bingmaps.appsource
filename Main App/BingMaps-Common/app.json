@@ -13,8 +13,8 @@
   "logo": "bingmaps256x240.png",
   "dependencies": [],
   "screenshots": [],
-  "platform": "20.0.0.0",
-  "application": "20.0.0.0",
+  "platform": "28.4.0.0",
+  "application": "28.4.53241.53312",
   "idRanges": [
     {
       "from": 70074128,
@@ -31,5 +31,5 @@
     "includeSourceInSymbolFile": true
   },
   "target": "Cloud",
-  "runtime": "8.0"
+  "runtime": "15.0"
 }

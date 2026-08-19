@@ -26,8 +26,8 @@
     }
   ],
   "screenshots": [],
-  "platform": "20.0.0.0",
-  "application": "20.0.0.0",
+  "platform": "28.4.0.0",
+  "application": "28.4.53241.53312",
   "idRanges": [
     {
       "from": 70074119,
@@ -46,7 +46,7 @@
   "supportedLocales": [
     "en-US"
   ],
-  "runtime": "8.0",
+  "runtime": "15.0",
   "keyVaultUrls": [],
   "applicationInsightsConnectionString": "InstrumentationKey=84bd9223-67d4-4378-8590-9e4a46023be2;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/"
 }

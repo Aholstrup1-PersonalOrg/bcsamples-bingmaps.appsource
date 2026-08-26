@@ -23,6 +23,12 @@
       "name": "FreddyDK.Licensing",
       "publisher": "Freddy Kristiansen",
       "version": "4.8.0.0"
+    },
+    {
+      "id": "c089c47f-312d-42e5-9901-1f56dfbc90dc",
+      "name": "1Vision Core Library",
+      "publisher": "1Vision365",
+      "version": "28.2.37.0"
     }
   ],
   "screenshots": [],

@@ -1,5 +1,8 @@
 name: Workspace compilation validation
 on:
+  push:
+    branches: [workspace-restore-validation]
+    paths: [.github/workflows/WorkspaceCompilationValidation.yaml]
   workflow_dispatch:
     inputs:
       alGoRef:
@@ -18,7 +21,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: microsoft/AL-Go
-          ref: ${{ inputs.alGoRef }}
+          ref: ${{ inputs.alGoRef || 'workspaces/artifact-free-compilation' }}
       - name: AL-Go unit tests
         run: . ./Tests/runtests.ps1 -Path Tests
       - name: Workflow sanitation tests

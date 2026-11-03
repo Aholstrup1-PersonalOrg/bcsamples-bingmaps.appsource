@@ -16,6 +16,12 @@
     ]
   },
   "useCompilerFolder": true,
+  "artifact": "////latest",
+  "workspaceCompilation": {
+    "enabled": true,
+    "useTemporaryAlTool": true
+  },
+  "doNotSignApps": true,
   "doNotPublishApps": true,
   "AZURE_CREDENTIALSSecretName": "AZURE_CREDENTIALS",
   "useProjectDependencies": true,

@@ -1,0 +1,25 @@
+name: Workspace compilation validation
+on:
+  workflow_dispatch:
+    inputs:
+      alGoRef:
+        description: AL-Go commit to validate
+        required: true
+        default: workspaces/artifact-free-compilation
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: microsoft/AL-Go
+          ref: ${{ inputs.alGoRef }}
+      - name: AL-Go unit tests
+        run: . ./Tests/runtests.ps1 -Path Tests
+      - name: Workflow sanitation tests
+        run: . ./Tests/runtests.ps1 -Path Tests/WorkflowSanitation

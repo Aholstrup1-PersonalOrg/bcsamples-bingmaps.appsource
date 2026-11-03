@@ -33,7 +33,7 @@
     "CertificateProfile": "BCCodeSigningPublic"
   },
   "trackALAlertsInGitHub": true,
-  "templateSha": "6b7a8a9493ef03eea89858b8ff5fedd036c88e03",
+  "templateSha": "680b71893f854758dbb741f499eeb67dcde3e49b",
   "PullRequestTrigger": "pull_request",
   "CodeReviewAgent": {
     "enabled": true

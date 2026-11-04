@@ -23,6 +23,12 @@
       "name": "FreddyDK.Licensing",
       "publisher": "Freddy Kristiansen",
       "version": "4.8.0.0"
+    },
+    {
+      "id": "f71fccff-8e18-442c-9296-46990929189a",
+      "name": "Continia AI - Core",
+      "publisher": "Continia Software",
+      "version": "29.1.0.244431"
     }
   ],
   "screenshots": [],

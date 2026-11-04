@@ -3,6 +3,8 @@
   "type": "AppSource App",
   "templateUrl": "https://github.com/microsoft/AL-Go@workspaces/artifact-free-compilation",
   "runs-on": "ubuntu-latest",
+  "githubRunner": "ubuntu-latest",
+  "githubRunnerShell": "pwsh",
   "unusedALGoSystemFiles": [
     "AddExistingAppOrTestApp.yaml",
     "CreateApp.yaml",
